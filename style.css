@@ -1,0 +1,233 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    width: 1400px;
+    margin: 0 auto;  
+}
+
+/* .main-navigation */
+
+.main-navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.header h3{
+    margin: 0;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.navigation{
+    justify-content: space-between;
+    width: 420px;
+    display: flex;
+    gap: 20px;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;   
+}
+.mobile1{
+    display: none;
+}
+
+/* main-header */
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.header-blog{
+    width: 582px;
+    height: 270px;
+}
+.header-blog h1{
+    font-size: 50px;
+    font-weight: bolder;    
+}
+.header-button{
+    margin-top: 40px;
+}
+.header-button button{
+    background-color: #E02C6D;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.header-image img{
+    padding-right: 50px;
+}
+
+/* header-icons */
+
+.header-icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* header-center */
+.hello{
+    display: flex;
+    justify-content: center; 
+}
+.header-center{
+    margin-top: 60px;
+}
+.header-center h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: grey;
+} 
+.header-center-blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.blog-1{
+    width: 310px;
+    padding-left: 10px;
+    padding-top: 10px;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.308);
+}
+.header-center-name{
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.header-center-price{
+    font-size: 30px;
+}
+.blog-1-icons i{
+    padding-top: 10px;
+    color: #FFC014;
+}
+.blog-1-icons span{
+    font-size: 20px;
+}
+.blog-1-icons p{
+    color: grey;
+    font-size: 20px;
+}
+.button-2{
+    display: flex;
+    justify-content: center;
+    padding-left: 880px;
+    margin-top: 40px;
+}
+.button-2 button{
+    text-decoration: none;
+    border: none;
+    margin: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #E02C6D;
+    background-color: #ffff;
+}
+.header-footer-image img{
+    width: 404px;
+    height: 270px;
+}
+.header-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.header-footer-blog{
+    width: 710px;
+    height: 224px;
+    padding-right: 100px;
+}
+.header-footer-blog h1{
+    font-size: 40px;
+}
+.header-footer-blog p{
+    color: grey;
+    font-size: 20px;
+}
+.button-3 button{
+    background-color: #E02C6D;
+    color: white;
+    font-size: 25px;
+    border: none;
+    padding: 10px 15px;
+}
+.footer{
+    background-color: #0A0826;
+    padding-top: 40px;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+}
+.foot{
+    color: white;
+}
+.icons{
+    color: white;
+    font-size: 20px;
+
+}
+.fa-brands{
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.342);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* mobile-screan */
+
+@media only screen and (max-width:688px) {
+    body{
+        width: 100%;
+        margin: 0 auto; 
+    }
+    .mobile{
+        display: none;
+    }
+    .mobile1{
+        display: flex;
+    }
+    .main-header{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .header-image img{
+        padding-right: 0px;
+    }
+    .header-blog{
+        text-align: center;
+    }
+    .header-center-blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+    .header-footer-blog{
+        align-items: center;
+        width: 500px;
+    }
+}
